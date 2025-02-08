@@ -34,3 +34,33 @@ for (let i = 0; i < 6; i++) {
 
    container.appendChild(card);
  }
+
+ async function handleCardClick(clickedCard){
+    try{
+        const flippedCard=document.querySelector(".card.flipped"); 
+        if(flippedCard && flippedCard !== clickedCard){
+            flippedCard.classList.remove("flipped"); 
+        }
+
+        //flip clicked card
+        if (!clickedCard.classList.contains ("flipped")){
+            await getRonSwansonQuote(clickedCard); 
+            clickedCard.classList.add("flipped"); 
+        } else{
+            clickedCard.classList.remove("flipped");
+        }
+    }catch(error){
+            console.log("Error Fetching Quote:", error);
+        }
+    }
+
+    //get quote
+ async function getRonSwansonQuote(card) {
+    try{
+      const response = await axios.get("https://ron-swanson-quotes.herokuapp.com/v2/quotes");
+    const data = await response.data;
+    card.querySelector(".quote-text").textContent = `"${data[0]}"`;
+  } catch (error) {
+  console.log(error);
+  }
+}
