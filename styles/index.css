@@ -113,11 +113,11 @@
   background-color: #fdf0d5;
   transform: rotateY(180deg);
   color: #283618;
-  padding: 10.3125rem;
+  padding: 0.625rem;
   font-size: 0.875rem;
 }
 .card__text {
-  font-size: 10.5rem;
+  font-size: 0.875rem;
   padding: 0.625rem;
   color: #283618;
   border: 0.125rem solid #bc6c25;
