@@ -145,4 +145,76 @@
 
 .card .quote-text {
   font-size: 16px;
+}
+
+.audio {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 60px 30px;
+}
+
+.form {
+  max-width: 1000px;
+  margin: auto;
+}
+.form h2 {
+  color: #283618;
+  background-color: #fdf0d5;
+  text-align: center;
+  font-size: 30px;
+}
+.form__fields {
+  background-color: #fdf0d5;
+  border: 5px solid #bc6c25;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.form__field {
+  color: #283618;
+  font-size: 24px;
+  background-color: #fdf0d5;
+}
+.form__name, .form__comment {
+  background-color: #fdf0d5;
+  border-style: none;
+  border: 0.0625rem solid #bc6c25;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+}
+.form::-moz-placeholder {
+  color: #283618;
+}
+.form::placeholder {
+  color: #283618;
+}
+.form__name {
+  height: 36px;
+}
+.form__comment {
+  resize: none;
+  height: 5rem;
+}
+.form__button {
+  font-size: 16px;
+  height: 36px;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: #fdf0d5;
+  display: flex;
+  justify-content: flex-end;
+  text-transform: uppercase;
+}
+
+.button {
+  width: 100px;
+  background-color: #bc6c25;
+  border-style: none;
+  border-radius: 4px;
+  font-size: 16px;
 }/*# sourceMappingURL=index.css.map */

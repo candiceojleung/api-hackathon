@@ -108,3 +108,83 @@
     font-size: 16px;
   }
   
+
+  .audio {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 60px 30px;
+  }
+  
+  
+  .form{  
+    max-width: 1000px;
+    margin: auto;
+  
+    h2 {
+      color: $maintext-color;
+      background-color: $card-color;
+      text-align: center;
+      font-size: 30px;
+    }
+    
+    &__fields{
+      background-color: $card-color;
+      border: 5px solid $textborder-color;
+      border-radius: 10px;
+      display:flex; 
+      flex-direction:column; 
+      padding: 20px;
+      width: 90%;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+  
+    &__field{
+      color:$maintext-color;
+      font-size:24px;
+      background-color: $card-color;
+    }
+  
+    &__name, &__comment{
+      background-color: $card-color;
+      border-style: none;
+      border: 0.0625rem solid $textborder-color;
+      border-radius: 0.25rem;
+      margin-bottom: 1rem;
+      padding: 0.75rem;
+  
+    }
+    
+    &::placeholder {
+      color:$maintext-color;
+    }
+  
+    &__name{
+      height: 36px;
+    }
+  
+    &__comment{
+      resize: none;
+      height: 5rem;
+    }
+  
+    &__button{
+    font-size:16px;
+    height:36px;
+    width: 100%;
+    border-radius: 0.25rem;
+    background-color:$card-color;
+    display:flex;
+    justify-content:flex-end; 
+    text-transform:uppercase;
+    }
+  }
+  
+  .button{
+    width: 100px;
+    background-color:$textborder-color;
+    border-style:none;
+    border-radius:4px;
+    font-size:16px;
+  }
+  
