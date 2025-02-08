@@ -7,21 +7,21 @@ for (let i = 0; i < 6; i++) {
 
   // Card-Front
   const cardFront = document.createElement("div");
-  cardFront.classList.add("card-front");
+  cardFront.classList.add("card__front");
 
   //Front Card Image
   const frontImg = document.createElement("div");
   frontImg.classList.add("img-container");
   frontImg.innerHTML =
-    '<img class="card-front__img" src="./assets/images/ron.png" alt="ron outline">';
+    '<img class="card__front--img" src="./assets/images/ron.png" alt="ron outline">';
   cardFront.append(frontImg);
 
   // Card-Back
   const cardBack = document.createElement("div");
-  cardBack.classList.add("card-back");
+  cardBack.classList.add("card__back");
 
   const quoteText = document.createElement("p");
-  quoteText.classList.add("quote-text");
+  quoteText.classList.add("card__text");
 
   // Append to front/back
   cardBack.appendChild(quoteText);
@@ -62,7 +62,7 @@ async function getRonSwansonQuote(card) {
       "https://ron-swanson-quotes.herokuapp.com/v2/quotes"
     );
     const data = await response.data;
-    card.querySelector(".quote-text").textContent = `"${data[0]}"`;
+    card.querySelector(".card__text").textContent = `"${data[0]}"`;
   } catch (error) {
     console.log(error);
   }
